@@ -69,3 +69,99 @@ u64 str_len_u64(const char* str)
 
     return len;
 }
+
+char* str_dup_u8(const char* str)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    u8 len = str_len_u8(str);
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    for (u8 i = 0; i < len + 1; i += 1)
+    {
+        result[i] = str[i];
+    }
+
+    return result;
+}
+
+char* str_dup_u16(const char* str)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    u16 len = str_len_u16(str);
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    for (u16 i = 0; i < len + 1; i += 1)
+    {
+        result[i] = str[i];
+    }
+
+    return result;
+}
+
+char* str_dup_u32(const char* str)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    u32 len = str_len_u32(str);
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    for (u32 i = 0; i < len + 1; i += 1)
+    {
+        result[i] = str[i];
+    }
+
+    return result;
+}
+
+char* str_dup_u64(const char* str)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    u64 len = str_len_u64(str);
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    for (u64 i = 0; i < len + 1; i += 1)
+    {
+        result[i] = str[i];
+    }
+
+    return result;
+}

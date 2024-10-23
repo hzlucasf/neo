@@ -17,3 +17,11 @@ u32 str_len_u32(const char*);
 typedef uint64_t u64;
 
 u64 str_len_u64(const char*);
+
+char* str_dup_u8(const char*);
+
+char* str_dup_u16(const char*);
+
+char* str_dup_u32(const char*);
+
+char* str_dup_u64(const char*);
