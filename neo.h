@@ -25,3 +25,19 @@ char* str_dup_u16(const char*);
 char* str_dup_u32(const char*);
 
 char* str_dup_u64(const char*);
+
+typedef int8_t i8;
+
+i8 str_index_of_i8(const char*, char);
+
+typedef int16_t i16;
+
+i16 str_index_of_i16(const char*, char);
+
+typedef int32_t i32;
+
+i32 str_index_of_i32(const char*, char);
+
+typedef int64_t i64;
+
+i64 str_index_of_i64(const char*, char);
