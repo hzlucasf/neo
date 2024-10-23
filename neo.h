@@ -41,3 +41,11 @@ i32 str_index_of_i32(const char*, char);
 typedef int64_t i64;
 
 i64 str_index_of_i64(const char*, char);
+
+char* str_sub_str_u8(const char*, u8, u8);
+
+char* str_sub_str_u16(const char*, u16, u16);
+
+char* str_sub_str_u32(const char*, u32, u32);
+
+char* str_sub_str_u64(const char*, u64, u64);

@@ -245,3 +245,191 @@ i64 str_index_of_i64(const char* str, char c)
 
     return -1;
 }
+
+char* str_sub_str_u8(const char* str, u8 start, u8 end)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    if (start == end)
+    {
+        char* result = malloc(1);
+
+        if (result == NULL)
+        {
+            return NULL;
+        }
+
+        result[0] = '\0';
+
+        return result;
+    }
+
+    if (start > end)
+    {
+        return NULL;
+    }
+
+    u8 len = end - start;
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    u8 j = 0;
+
+    for (u8 i = start; i < end; i += 1, j += 1)
+    {
+        result[j] = str[i];
+    }
+
+    result[j] = '\0';
+
+    return result;
+}
+
+char* str_sub_str_u16(const char* str, u16 start, u16 end)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    if (start == end)
+    {
+        char* result = malloc(1);
+
+        if (result == NULL)
+        {
+            return NULL;
+        }
+
+        result[0] = '\0';
+
+        return result;
+    }
+
+    if (start > end)
+    {
+        return NULL;
+    }
+
+    u16 len = end - start;
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    u16 j = 0;
+
+    for (u16 i = start; i < end; i += 1, j += 1)
+    {
+        result[j] = str[i];
+    }
+
+    result[j] = '\0';
+
+    return result;
+}
+
+char* str_sub_str_u32(const char* str, u32 start, u32 end)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    if (start == end)
+    {
+        char* result = malloc(1);
+
+        if (result == NULL)
+        {
+            return NULL;
+        }
+
+        result[0] = '\0';
+
+        return result;
+    }
+
+    if (start > end)
+    {
+        return NULL;
+    }
+
+    u32 len = end - start;
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    u32 j = 0;
+
+    for (u32 i = start; i < end; i += 1, j += 1)
+    {
+        result[j] = str[i];
+    }
+
+    result[j] = '\0';
+
+    return result;
+}
+
+char* str_sub_str_u64(const char* str, u64 start, u64 end)
+{
+    if (str == NULL)
+    {
+        return NULL;
+    }
+
+    if (start == end)
+    {
+        char* result = malloc(1);
+
+        if (result == NULL)
+        {
+            return NULL;
+        }
+
+        result[0] = '\0';
+
+        return result;
+    }
+
+    if (start > end)
+    {
+        return NULL;
+    }
+
+    u64 len = end - start;
+
+    char* result = malloc(len + 1);
+
+    if (result == NULL)
+    {
+        return NULL;
+    }
+
+    u64 j = 0;
+
+    for (u64 i = start; i < end; i += 1, j += 1)
+    {
+        result[j] = str[i];
+    }
+
+    result[j] = '\0';
+
+    return result;
+}
